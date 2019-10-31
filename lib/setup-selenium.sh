@@ -2,8 +2,6 @@
 
 set -eo pipefail
 
-sudo apt-fast install -y firefox
-
 wget -c -nc --retry-connrefused --tries=0 https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar -O "$HOME/selenium.jar"
 
 # Geckodriver requires java 8.
@@ -18,5 +16,3 @@ jdk_switcher use openjdk8
 # Download geckodriver
 wget -c -nc --retry-connrefused --tries=0 https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-linux64.tar.gz -O "$HOME/geckodriver.tar.gz"
 sudo tar xfz "$HOME/geckodriver.tar.gz" -C /usr/local/bin/
-
-java -jar "$HOME/selenium.jar" &
