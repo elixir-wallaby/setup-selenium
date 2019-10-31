@@ -15,7 +15,7 @@ jdk_switcher use openjdk8
 
 # Download geckodriver
 wget -c -nc --retry-connrefused --tries=0 https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-linux64.tar.gz -O "$HOME/geckodriver.tar.gz"
-tar xfz "$HOME/geckodriver.tar.gz" -C /usr/local/bin/geckodriver
+tar xfz "$HOME/geckodriver.tar.gz" -C /usr/local/bin/
 
 function selenium-server() {
   nohup java -jar "$HOME/selenium.jar" &
