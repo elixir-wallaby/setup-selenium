@@ -1,7 +1,7 @@
-name: 'setup-chromedriver'
-description: 'Setup chromedriver'
-author: 'nanasess'
+name: 'setup-selenium'
+description: 'Setup selenium'
+author: 'mhanberg'
 runs:
   using: 'node12'
-  main: 'lib/setup-chromedriver.js'
+  main: 'lib/setup-selenium.js'
 

@@ -4,8 +4,8 @@ import * as path from "path";
 
 async function run() {
   try {
-    console.log(`##setup chromedriver`);
-    const version = core.getInput("chromedriver-version", { required: true });
+    console.log(`##setup selenium`);
+    const version = core.getInput("selenium-version", { required: true });
     const plat = process.platform;
     let arch = "linux";
     switch (plat) {
@@ -19,7 +19,7 @@ async function run() {
       case "linux":
         arch = "linux64";
     }
-    await exec.exec(path.join(__dirname, "setup-chromedriver.sh"), [
+    await exec.exec(path.join(__dirname, "setup-selenium.sh"), [
       version,
       arch
     ]);

@@ -1,9 +1,9 @@
 {
-  "name": "setup-chromedriver",
+  "name": "setup-selenium",
   "version": "1.0.0",
   "private": true,
-  "description": "setup-chromedriver",
-  "main": "lib/setup-chromedriver.js",
+  "description": "setup-selenium",
+  "main": "lib/setup-selenium.js",
   "scripts": {
     "build": "tsc",
     "format": "prettier --write **/*.ts",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nanasess/setup-chromedriver.git"
+    "url": "git+https://github.com/elixir-wallaby/setup-selenium.git"
   },
   "keywords": [
     "actions",
-    "php",
+    "selenium",
     "setup"
   ],
-  "author": "nanasess",
+  "author": "mhanberg",
   "license": "GPL",
   "dependencies": {
     "@actions/core": "^1.0.0",
