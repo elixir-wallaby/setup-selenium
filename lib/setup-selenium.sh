@@ -2,9 +2,6 @@
 
 set -eo pipefail
 
-version=$1
-arch=$2
-
 sudo apt-fast install -y xvfb screen google-chrome-stable
 
 wget -c -nc --retry-connrefused --tries=0 https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar
