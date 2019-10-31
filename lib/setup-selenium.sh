@@ -2,8 +2,7 @@
 
 set -eo pipefail
 
-sudo apt-get update3
-sudo apt-get install -y firefox
+sudo apt-fast install -y firefox
 
 wget -c -nc --retry-connrefused --tries=0 https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar -O "$HOME/selenium.jar"
 
