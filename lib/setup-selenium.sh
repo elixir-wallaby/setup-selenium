@@ -2,10 +2,6 @@
 
 set -eo pipefail
 
-sudo apt-fast install -y xvfb screen google-chrome-stable
-
-wget -c -nc --retry-connrefused --tries=0 https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar
-
 wget -c -nc --retry-connrefused --tries=0 https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar -O "$HOME/selenium.jar"
 
 # Geckodriver requires java 8.
@@ -14,7 +10,7 @@ sudo apt-get update && sudo apt-get install -y openjdk-8-jdk
 
 # Install jdk switcher to easily change default jdk
 git clone https://github.com/michaelklishin/jdk_switcher.git "$HOME/jdk_switcher"
-./"$HOME/jdk_switcher/jdk_switcher.sh"
+. "$HOME/jdk_switcher/jdk_switcher.sh"
 jdk_switcher use openjdk8
 
 # Download geckodriver
