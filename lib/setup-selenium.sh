@@ -19,4 +19,3 @@ sudo tar xfz "$HOME/geckodriver.tar.gz" -C /usr/local/bin/
 
 sudo nohup java -jar "$HOME/selenium.jar" &
 sleep 10
-cat nohup.out
