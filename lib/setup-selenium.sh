@@ -19,5 +19,4 @@ jdk_switcher use openjdk8
 wget -c -nc --retry-connrefused --tries=0 https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-linux64.tar.gz -O "$HOME/geckodriver.tar.gz"
 sudo tar xfz "$HOME/geckodriver.tar.gz" -C /usr/local/bin/
 
-sudo nohup java -jar "$HOME/selenium.jar" &
-sleep 10
+java -jar "$HOME/selenium.jar" &
